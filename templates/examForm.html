@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Form</title>
+    <link rel="stylesheet" href="static\examForm.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Exam Registration Form</h2>
+      <div class="content">
+        <form action="/submit" method="POST">
+          <div class="form-group">
+            <label>Student Name</label>
+            <input name="name" type="text" required/>
+          </div>
+
+          <div class="form-group">
+            <label>Class Roll Number</label>
+            <input name="roll" type="number" required/>
+          </div>
+          <div class="form-group">
+            <label>Student Registration Number</label>
+            <input name="registrationNumber" type="number" required/>
+          </div>
+
+          <div class="form-group">
+            <label>Registrated Course</label>
+            <input name="registratedCourse" type="text" required/>
+          </div>
+
+          <div class="form-group">
+            <label>Exam Start</label>
+            <input name="examDate" type="date" required/>
+          </div>
+
+          <div class="form-group">
+            <label>Exam End</label>
+            <input name="examEnd" type="date" required/>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
